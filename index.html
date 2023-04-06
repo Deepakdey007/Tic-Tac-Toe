@@ -16,9 +16,9 @@
        <div class="grid">
 
         <!-- Turn Indicator -->
-        <div class="turn">
-            <i class="fa-solid fa-x turquoise"></i>
-            <p class="turquoise">Player 1, you're up!</p>
+        <div class="turn" data-id="turn">
+            <i class="fa-solid fa-x"></i>
+            <p>Player 1, you're up!</p>
         </div>
 
         <!-- Dropdown Menu -->
@@ -28,25 +28,24 @@
               <i class="fa-solid fa-chevron-down"></i>
             </button>
   
-            <div class="items border hidden">
+            <div class="items border hidden" data-id="menu-items">
                 <!-- border and hidden class are the shared styles that we use across mltiple elements -->
                 <!-- in css they are in Shared utility class setion -->
-              <button>Reset</button>
-              <button>New Round</button>
+              <button data-id="reset-btn">Reset</button>
+              <button data-id="new-round-btn">New Round</button>
             </div>
         </div>
 
         <!-- Game Board -->
-        <div class="square shadow">1</div>
-        <div class="square shadow"></div>
-        <div class="square shadow"></div>
-        <div class="square shadow"></div>
-        <div class="square shadow"></div>
-        <div class="square shadow"></div>
-        <div class="square shadow"></div>
-        <div class="square shadow"></div>
-        <div class="square shadow"></div>
-
+        <div id="1" class="square shadow" data-id="square"></div>
+        <div id="2" class="square shadow" data-id="square"></div>
+        <div id="3" class="square shadow" data-id="square"></div>
+        <div id="4" class="square shadow" data-id="square"></div>
+        <div id="5" class="square shadow" data-id="square"></div>
+        <div id="6" class="square shadow" data-id="square"></div>
+        <div id="7" class="square shadow" data-id="square"></div>
+        <div id="8" class="square shadow" data-id="square"></div>
+        <div id="9" class="square shadow" data-id="square"></div>
         <!-- Score Borad -->
         <div class="score shadow" style="background-color: var(--turquoise)">
             <p>Player 1</p>
@@ -72,10 +71,10 @@
     </footer>
 
     <!-- Modal that opens when game ends -->
-    <div class="modal hidden">
+    <div class="modal hidden" data-id="modal">
         <div class="modal-contents">
-            <p>Player 1 Wins!</p>
-            <button>Play again</button>
+            <p data-id="modal-text">Player 1 Wins!</p>
+            <button data-id="modal-btn">Play again</button>
         </div>
     </div>
 </body>

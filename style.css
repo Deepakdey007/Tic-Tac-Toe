@@ -90,7 +90,7 @@ button:hover {
     align-items: center;
     align-self: center;
     gap: 20px;
-    color: var(--yellow);
+    color: var(--turquoise);
 }
 
 @keyframes turn-text-animation {
